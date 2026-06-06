@@ -9,5 +9,5 @@ export async function getPopularMovies(){
 export async function searchMovies(query){
     let response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${query}`);
     let data = await response.json();
-    return data.results;
+    return data.results || [];
 }

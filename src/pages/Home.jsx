@@ -50,7 +50,7 @@ function Home(){
         <div className="bg-primary flex flex-col gap-2.5 p-3 items-center">
             <div className="text-white border rounded-2xl p-1.5">
                 <form onSubmit={handleSearch} className="">
-                    <input type="text" placeholder="Search for the movie..." className="focus:outline-none" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)}/>
+                    <input type="text" placeholder="Search for the movie..." className="focus:outline-none p-1" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)}/>
                     <button type="submit" className="">{"\u{1F50D}"}</button>
                 </form>
             </div>

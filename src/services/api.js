@@ -1,4 +1,5 @@
-const API_KEY = "faceeea65b07c049b2afa8dd66b36440";
+const API_KEY = import.meta.env.API_KEY;
+
 export async function getPopularMovies(){
     let response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`);
     let data = await response.json();
